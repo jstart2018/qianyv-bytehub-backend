@@ -1,0 +1,13 @@
+server:
+  port: 8000
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: jc-club-subject
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.88.200:3306/byteHub-db

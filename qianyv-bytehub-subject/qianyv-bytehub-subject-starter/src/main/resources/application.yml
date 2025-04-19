@@ -5,7 +5,7 @@ server:
 
 spring:
   application:
-    name: jc-club-subject
+    name: qianyv-bytehub-subject
   datasource:
     username: root
     password: 123456

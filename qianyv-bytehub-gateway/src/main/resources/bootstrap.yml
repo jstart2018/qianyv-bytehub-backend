@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: qianyv-bytehub-gateway
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.88.200
+

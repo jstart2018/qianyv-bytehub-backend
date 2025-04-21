@@ -1,0 +1,24 @@
+server:
+  port: 5000
+spring:
+  # redis配置
+  redis:
+    # Redis数据库索引（默认为0）
+    database: 1
+    # Redis服务器地址
+    host: 192.168.88.200
+    # Redis服务器连接端口
+    port: 6379
+  #网关路由
+  cloud:
+    gateway:
+      routes:
+        - id: oss
+          uri: lb://jc-club-oss
+          predicates:
+            - Path=/oss/**
+        - id: subject
+          uri: lb://jc-club-subject
+          predicates:
+            - Path=/subject/**
+

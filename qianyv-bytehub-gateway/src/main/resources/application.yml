@@ -14,11 +14,14 @@ spring:
     gateway:
       routes:
         - id: oss
-          uri: lb://jc-club-oss
+          uri: lb://qianyv-bytehub-oss
           predicates:
             - Path=/oss/**
         - id: subject
-          uri: lb://jc-club-subject
+          uri: lb://qianyv-bytehub-subject
           predicates:
             - Path=/subject/**
-
+        - id: subject
+          uri: lb://qianyv-bytehub-auth
+          predicates:
+            - Path=/auth/**
